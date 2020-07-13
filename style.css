@@ -43,7 +43,7 @@ body img {
   list-style: none;
 }
 
-/* * Lista dei Contatti * */
+/* * Userline * */
 
 #userline {
   /* debug color */
@@ -68,4 +68,81 @@ body img {
 
 .icon-wrapper a:hover{
   color: black;
+}
+
+/* * Notifiche * */
+
+#notification {
+  background-color: lightblue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+#notification a{
+  color: grey;
+}
+
+.fa-bell-slash {
+  color: lightblue;
+  background-color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* * Searchbar * */
+
+#searchbar {
+  background-color: lightgrey;
+  padding: 10px;
+
+  text-align: center;
+  font-size: 18px;
+}
+
+#searchbar input {
+  background-color: white;
+  display: flex;
+  width: 90%;
+  padding: 4px;
+  height: 25px;
+}
+
+
+/* * Lista dei Contatti * */
+
+#contact-list li a {
+  background-color: antiquewhite;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  text-decoration: none;
+}
+
+#contact-list h3 {
+  color: black;
+}
+
+/* stile dei singoli contatti */
+
+.contact-style{
+  height: 100%;
+}
+
+.contact-style img {
+  height: 100%;
+}
+
+.contact-style > div{
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: top;
 }
