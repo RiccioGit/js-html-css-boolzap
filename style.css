@@ -1,0 +1,33 @@
+/* *************************** */
+/* ** REGOLE GENERALI CSS ** */
+/* *********************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-style: Montserrat, sans-serif;
+  background-color: lightgray;
+}
+
+.back-top {
+  background-color: darkcyan;
+  height: 150px;
+}
+
+/* *************************** */
+/* ** REGOLE DEL CONTAINER ** */
+/* *********************** */
+
+#chat-container {
+  /* debug color */
+  background-color: red;
+  display: flex;
+  padding: 2%;
+  height: 100vh;
+}
+
+/* * Lista dei Contatti * */
