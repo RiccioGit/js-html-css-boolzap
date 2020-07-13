@@ -13,7 +13,7 @@
     <!-- my script -->
     <script src="myscript.js"></script>
     <!-- TITOLO -->
-    <title>BoolZap</title>
+    <title>VaaZap</title>
     <!-- my CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
@@ -28,11 +28,133 @@
     <!-- Container della chat -->
     <div id="chat-container">
 
-      <div class="contact-list">
+      <!-- SEZIONE A SX DELLA PAGINA -->
 
-      </div>
+      <section id="sx-area">
+        <!-- Parte in alto a sx con la mia foto profilo e tasti in grigio -->
+        <div id="userline">
+          <img src="./img/roberto.jpg" alt="img roberto">
+          <div class="icon-wrapper">
+            <a href="#"><i class="fas fa-circle-notch"></i></a>
+            <a href="#"><i class="fas fa-comment-alt"></i></a>
+            <a href="#"><i class="fas fas fa-ellipsis-v"></i></a>
+          </div>
+        </div>
+
+        <!-- Banner per ricevere notifiche di nuovi messaggi -->
+        <div id="notification">
+
+            <i class="fas fa-bell-slash"></i>
+            <h4>Ricevi notifiche di nuovi messaggi</h4>
+            <a href="#">Attiva notifiche desktop</a>
+
+        </div>
+
+        <!-- Barra di ricerca chat -->
+        <div id="searchbar">
+
+            <i class="fas fa-search"></i>
+            <input type="text" name="search-contact" placeholder="Cerca o inizia una nuova chat">
+            
+        </div>
 
 
+        <!-- Lista delle chat con i vari contatti -->
+        <ul id="contact-list">
+
+          <!-- FRANCO -->
+          <li>
+            <!-- !!!! tag "a" per far sì che si possa cliccare sulla chat ed accedervi in futuro !!!!! -->
+            <a href="#">
+            <div class="contact-style">
+              <img src="./img/franco.jpg" alt="img franco">
+              <div>
+                <h3>Franco</h3>
+                <span>Piutost che nuta l'è mei piutost</span>
+              </div>
+            </div>
+            <span>17:03</span>
+            </a>
+          </li>
+
+          <!-- DONATO -->
+          <li>
+            <a href="#">
+            <div class="contact-style">
+              <img src="./img/donato.jpg" alt="img donato">
+              <div>
+                <h3>Donato</h3>
+                <span>Piutost che nuta l'è mei piutost</span>
+              </div>
+            </div>
+            <span>17:13</span>
+            </a>
+          </li>
+
+          <!-- TONINO -->
+          <li>
+            <a href="#">
+            <div class="contact-style">
+              <img src="./img/tonino.jpg" alt="img tonino">
+              <div>
+                <h3>Tonino</h3>
+                <span>Piutost che nuta l'è mei piutost</span>
+              </div>
+            </div>
+            <span>17:23</span>
+            </a>
+          </li>
+
+          <!-- PEPPE -->
+          <li>
+            <a href="#">
+            <div class="contact-style">
+              <img src="./img/peppe.jpg" alt="img peppe">
+              <div>
+                <h3>Peppe</h3>
+                <span>Piutost che nuta l'è mei piutost</span>
+              </div>
+            </div>
+            <span>17:33</span>
+            </a>
+          </li>
+
+          <!-- SANDRONE -->
+          <li>
+            <a href="#">
+            <div class="contact-style">
+              <img src="./img/Sandrone.jpg" alt="img sandrone">
+              <div>
+                <h3>Sandrone</h3>
+                <span>Piutost che nuta l'è mei piutost</span>
+              </div>
+            </div>
+            <span>17:43</span>
+            </a>
+          </li>
+
+          <!-- ORESTE -->
+          <li>
+            <a href="#">
+            <div class="contact-style">
+              <img src="./img/oreste.jpg" alt="img oreste">
+              <div>
+                <h3>Oreste</h3>
+                <span>Piutost che nuta l'è mei piutost</span>
+              </div>
+            </div>
+            <span>17:53</span>
+            </a>
+          </li>
+
+          <!-- FINE DELLA LISTA CONTATTI -->
+        </ul>
+
+      <!-- ** FINE DELLA SEZIONE SX DELLA PAGINA ** -->
+      </section>
+
+
+<!-- FINE DEL CONTAINER -->
     </div>
 
   </body>

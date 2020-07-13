@@ -18,6 +18,10 @@ body {
   height: 150px;
 }
 
+body img {
+  border-radius: 50%;
+}
+
 /* *************************** */
 /* ** REGOLE DEL CONTAINER ** */
 /* *********************** */
@@ -25,9 +29,43 @@ body {
 #chat-container {
   /* debug color */
   background-color: red;
+
   display: flex;
   padding: 2%;
   height: 100vh;
 }
 
+/* *************************** */
+/* ** REGOLE DELLA SEZIONE CONTATTI (SX) ** */
+/* *********************** */
+
+#sx-area ul li {
+  list-style: none;
+}
+
 /* * Lista dei Contatti * */
+
+#userline {
+  /* debug color */
+  background-color: darkgreen;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 10px;
+}
+
+#userline img {
+  height: 100%;
+}
+
+.icon-wrapper a{
+  color: grey;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.icon-wrapper a:hover{
+  color: black;
+}
