@@ -27,9 +27,7 @@ body img {
 /* *********************** */
 
 #chat-container {
-  /* debug color */
-  background-color: red;
-
+  background-color: lightgray;
   display: flex;
   padding: 2%;
   height: 100vh;
@@ -46,9 +44,7 @@ body img {
 /* * Userline * */
 
 #userline {
-  /* debug color */
-  background-color: darkgreen;
-
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,9 +92,8 @@ body img {
 /* * Searchbar * */
 
 #searchbar {
-  background-color: lightgrey;
+  background-color: white;
   padding: 10px;
-
   text-align: center;
   font-size: 18px;
 }
@@ -145,4 +140,73 @@ body img {
   padding-left: 10px;
   display: inline-block;
   vertical-align: top;
+}
+
+/* *************************** */
+/* ** REGOLE DELLA SEZIONE CHAT (DX) ** */
+/* *********************** */
+
+#dx-area {
+  width: 70%;
+/* debug */
+height: 100%;
+}
+
+#dx-area .receiver-info {
+  /* debug color */
+  background-color: yellow;
+
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* DA RIVEDERE PER ICONE A DX */
+
+#dx-area .receiver-info .icon-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* !!!!!vedi sopra!!!! */
+
+#dx-area #messages{
+  background: url("img/wallpaper.jpg");
+  background-repeat: repeat-y;
+  background-size: contain;
+  overflow-y: auto;
+  /* altezza provvisoria, da modificare */
+  height: 426px;
+}
+
+/* * form in cui scrivere nuovi msg * */
+
+#dx-area #new-msg-area {
+  background-color: antiquewhite;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#dx-area #new-msg-area #send-btn {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 20px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+#dx-area #new-msg-area .input-msg {
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+
+#dx-area #new-msg-area .input-msg input {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
 }
