@@ -16,6 +16,8 @@ body {
 .back-top {
   background-color: darkcyan;
   height: 150px;
+  width: 100%;
+  z-index: -1;
 }
 
 body img {
@@ -153,13 +155,12 @@ height: 100%;
 }
 
 #dx-area .receiver-info {
-  /* debug color */
-  background-color: yellow;
-
+  background-color: white;
   height: 60px;
   display: flex;
   align-items: center;
   padding: 10px;
+  border-left: 1px solid gray;
 }
 
 /* DA RIVEDERE PER ICONE A DX */
@@ -173,7 +174,6 @@ height: 100%;
 
 #dx-area #messages{
   background: url("img/wallpaper.jpg");
-  background-repeat: repeat-y;
   background-size: contain;
   overflow-y: auto;
   /* altezza provvisoria, da modificare */
