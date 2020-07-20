@@ -3,211 +3,252 @@
   <head>
     <meta charset="utf-8">
     <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
-    <!-- j Query -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <!-- my script -->
-    <script src="myscript.js"></script>
-    <!-- TITOLO -->
-    <title>VaaZapp</title>
-    <!-- my CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- Link al mio file CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- J Query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Titolo -->
+    <title>VaaZap</title>
   </head>
-
   <body>
 
-    <!-- Background -->
-    <div class="back-top"></div>
+    <div id="container">
 
-    <!-- Container della chat -->
-    <div id="chat-container">
+      <main>
 
-      <!-- SEZIONE A SX DELLA PAGINA -->
+        <!-- Sezioni degli sfondi dietro la chat -->
 
-      <section id="sx-area">
-        <!-- Parte in alto a sx con la mia foto profilo e tasti in grigio -->
-        <div id="userline">
-          <img src="./img/roberto.jpg" alt="img roberto">
-          <div class="icon-wrapper">
-            <a href="#"><i class="fas fa-circle-notch"></i></a>
-            <a href="#"><i class="fas fa-comment-alt"></i></a>
-            <a href="#"><i class="fas fas fa-ellipsis-v"></i></a>
-          </div>
-        </div>
-
-        <!-- Banner per ricevere notifiche di nuovi messaggi -->
-        <div id="notification">
-
-            <i class="fas fa-bell-slash"></i>
-            <h4>Ricevi notifiche di nuovi messaggi</h4>
-            <a href="#">Attiva notifiche desktop</a>
-
-        </div>
-
-        <!-- Barra di ricerca chat -->
-        <div id="searchbar">
-
-            <i class="fas fa-search"></i>
-            <input type="text" name="search-contact" placeholder="Cerca o inizia una nuova chat">
-
-        </div>
+        <section id="background-header">
+        </section>
+        <section id="background-main">
 
 
-        <!-- Lista delle chat con i vari contatti -->
-        <ul id="contact-list">
+          <section id="main-body">
 
-          <!-- FRANCO -->
-          <li>
-            <!-- !!!! tag "a" per far sì che si possa cliccare sulla chat ed accedervi in futuro !!!!! -->
-            <a href="#">
-            <div class="contact-style">
-              <img src="./img/franco.jpg" alt="img franco">
-              <div>
-                <h3>Franco</h3>
-                <span>Piutost che nuta l'è mei piutost</span>
+            <!-- ***** AREA SX (ricerca e contatti) ****** -->
+
+            <nav id="sx-area">
+
+              <!-- Miei dati -->
+              <div class="user-profile">
+                <div class="propic">
+                  <img src="./img/roberto.jpg" alt="img roberto">
+                </div>
+
+                <!-- wrapper delle icone -->
+
+                <div class="user-profile-nav">
+                  <i class="fas fa-ellipsis-v"></i>
+                  <i class="fas fa-comment-alt"></i>
+                  <i class="fas fa-circle-notch"></i>
+                </div>
+
               </div>
-            </div>
-            <span>17:03</span>
-            </a>
-          </li>
 
-          <!-- DONATO -->
-          <li>
-            <a href="#">
-            <div class="contact-style">
-              <img src="./img/donato.jpg" alt="img donato">
-              <div>
-                <h3>Donato</h3>
-                <span>Piutost che nuta l'è mei piutost</span>
+              <!-- Attiva le notifiche -->
+
+              <div id="notification">
+
+                  <i class="fas fa-bell-slash"></i>
+                  <h4>Ricevi notifiche di nuovi messaggi</h4>
+                  <a href="#">Attiva notifiche desktop</a>
+
               </div>
-            </div>
-            <span>17:13</span>
-            </a>
-          </li>
 
-          <!-- TONINO -->
-          <li>
-            <a href="#">
-            <div class="contact-style">
-              <img src="./img/tonino.jpg" alt="img tonino">
-              <div>
-                <h3>Tonino</h3>
-                <span>Piutost che nuta l'è mei piutost</span>
+              <!-- Searchbar -->
+
+              <div class="search">
+                <label class="search-img">
+                  <i class="fas fa-search"></i>
+                </label>
+                <input id="search-bar" type="text" name="" value="" placeholder="Cerca o inizia una nuova chat:">
               </div>
-            </div>
-            <span>17:23</span>
-            </a>
-          </li>
 
-          <!-- PEPPE -->
-          <li>
-            <a href="#">
-            <div class="contact-style">
-              <img src="./img/peppe.jpg" alt="img peppe">
-              <div>
-                <h3>Peppe</h3>
-                <span>Piutost che nuta l'è mei piutost</span>
+              <!-- ** FRANCO ** -->
+              <div class="contact " data-id="1">
+                <div class="user-img">
+                  <img src="./img/franco.jpg" alt="img Franco">
+                </div>
+                <div class="contact-information">
+                  <span class="name">Franco </span>
+                  <span class="last-msg">Piutost che nuta l'è mei piutost</span>
+                </div>
+                <div class="contact-time">
+                  <span>17:05</span>
+                </div>
               </div>
-            </div>
-            <span>17:33</span>
-            </a>
-          </li>
 
-          <!-- SANDRONE -->
-          <li>
-            <a href="#">
-            <div class="contact-style">
-              <img src="./img/Sandrone.jpg" alt="img sandrone">
-              <div>
-                <h3>Sandrone</h3>
-                <span>Piutost che nuta l'è mei piutost</span>
+              <!-- ** DONATO ** -->
+              <div class="contact" data-id="2">
+                <div class="user-img">
+                  <img src="./img/donato.jpg" alt="img donato">
+                </div>
+                <div class="contact-information">
+                  <span class="name">Donato</span>
+                  <span class="last-msg">Piutost che nuta l'è mei piutost</span>
+                </div>
+                <div class="contact-time">
+                  <span>17:15</span>
+                </div>
               </div>
-            </div>
-            <span>17:43</span>
-            </a>
-          </li>
 
-          <!-- ORESTE -->
-          <li>
-            <a href="#">
-            <div class="contact-style">
-              <img src="./img/oreste.jpg" alt="img oreste">
-              <div>
-                <h3>Oreste</h3>
-                <span>Piutost che nuta l'è mei piutost</span>
+              <!-- ** ORESTE ** -->
+              <div class="contact" data-id="3">
+                <div class="user-img">
+                  <img src="./img/oreste.jpg" alt="img oreste">
+                </div>
+                <div class="contact-information">
+                  <span class="name">Oreste</span>
+                  <span class="last-msg">Piutost che nuta l'è mei piutost</span>
+                </div>
+                <div class="contact-time">
+                  <span>17:25</span>
+                </div>
               </div>
-            </div>
-            <span>17:53</span>
-            </a>
-          </li>
 
-          <!-- FINE DELLA LISTA CONTATTI -->
-        </ul>
+              <!-- ** BEPPE ** -->
+              <div class="contact" data-id="4">
+                <div class="user-img">
+                  <img src="./img/peppe.jpg" alt="img beppe">
+                </div>
+                <div class="contact-information">
+                  <span class="name">Beppe</span>
+                  <span class="last-msg">Piutost che nuta l'è mei piutost</span>
+                </div>
+                <div class="contact-time">
+                  <span>17:35</span>
+                </div>
+              </div>
 
-      <!-- ** FINE DELLA SEZIONE SX DELLA PAGINA ** -->
-      </section>
+              <!-- ** SANDRONE ** -->
+              <div class="contact" data-id="5">
+                <div class="user-img">
+                  <img src="./img/Sandrone.jpg" alt="img sandrone">
+                </div>
+                <div class="contact-information">
+                  <span class="name">Sandrone</span>
+                  <span class="last-msg">Piutost che nuta l'è mei piutost</span>
+                </div>
+                <div class="contact-time">
+                  <span>17:45</span>
+                </div>
+              </div>
+
+              <!-- ** TONINO ** -->
+              <div class="contact" data-id="6">
+                <div class="user-img">
+                  <img src="./img/tonino.jpg" alt="img tonino">
+                </div>
+                <div class="contact-information">
+                  <span class="name">Tonino</span>
+                  <span class="last-msg">Piutost che nuta l'è mei piutost</span>
+                </div>
+                <div class="contact-time">
+                  <span>17:55</span>
+                </div>
+              </div>
+
+            </nav>
+
+            <!-- ***** AREA DX (la chat vera e propria) ****** -->
+
+            <section id="dx-area">
 
 
-      <section id="dx-area">
+              <header id="profile-action-nav">
 
-        <!-- parte in alto con le info della persona con cui stiamo messaggiando -->
+                  <!-- Informazioni del profilo con cui stiamo chattando -->
+                <div class="nav-left">
+                  <div class="user-img-cpu">
+                    <img src="" alt="">
+                  </div>
 
-         <div class="receiver-info">
 
-           <div class="contact-style">
-             <img src="./img/franco.jpg" alt="img franco">
-             <div>
-               <h3>Franco</h3>
-               <span>Ultimo accesso oggi alle 17.03</span>
-             </div>
-           </div>
+                  <div class="profile-information">
+                    <span id="name"></span>
+                    <span id="last-access" style="display:none">Ultimo accesso oggi alle 18:00</span>
+                  </div>
+                </div>
 
-           <div class="icon-wrapper">
-             <a href="#"><i class="fas fa-search"></i></a>
-             <a href="#"><i class="fas fa-paperclip"></i></i></a>
-             <a href="#"><i class="fas fas fa-ellipsis-v"></i></a>
-           </div>
+                <!-- wrapper delle icone -->
+                <div class="nav-right">
+                  <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                  <a href="#"><i class="fas fa-paperclip"></i></a>
+                  <a href="#"><i class="fas fa-search"></i></a>
+                </div>
 
-         </div>
+              </header>
 
-         <div id="messages">
-             <div class="msg-text">
-               <span class="new-text">Ue giovanotto, sono il Franco.</span>
-               <span class="time">17:00</span>
-             </div>
-         </div>
 
-         <!-- sezione per inviare nuovi messaggi -->
+              <!-- box della chat -->
+              <section id="chat-box">
+                
+                <div class="cpu-side" data-id="1"></div>
+                <div class="cpu-side" data-id="2"></div>
+                <div class="cpu-side" data-id="3"></div>
+                <div class="cpu-side" data-id="4"></div>
+                <div class="cpu-side" data-id="5"></div>
+                <div class="cpu-side" data-id="6"></div>
 
-         <div id="new-msg-area">
+                <div class="user-side" data-id="1"></div>
+                <div class="user-side" data-id="2"></div>
+                <div class="user-side" data-id="3"></div>
+                <div class="user-side" data-id="4"></div>
+                <div class="user-side" data-id="5"></div>
+                <div class="user-side" data-id="6"></div>
 
-           <div class="icon-wrapper">
-             <a href="#"><i class="far fa-smile"></i></a>
-           </div>
+              </section>
 
-           <div class="input-msg">
-             <input id="new-msg" type="text" name="new-msg" placeholder="Scrivi un messaggio">
-             <i id="send-btn" class="fas fa-location-arrow"></i>
-           </div>
+              <!--box di scrittura -->
+              <div id="box-writing">
+                <div class="emoji">
+                 <a href="#"><i class="far fa-smile"></i></a>
+                </div>
+                <div class="txt-box">
+                  <input id="txt-form" type="text" name="msg" value="" placeholder="Scrivi un messaggio">
+                </div>
+                <div class="send-btn">
+                  <a class="record" href="#"><i class="fas fa-microphone"></i></a>
+                  <a class="enter hide" href="#"><i class="fas fa-paper-plane"></i></a>
+                </div>
 
-           <div class="icon-wrapper">
-             <a href="#"><i class="fas fa-microphone"></i></a>
-           </div>
+              </div>
+              <!-- // fine box scrittura -->
+            </section>
+            <!-- // fine dx area -->
+          </section>
+          <!-- // fine main body -->
+        </section>
+        <!-- // fine background main -->
+      </main>
+      <!-- // fine del main -->
+    </div>
+    <!-- // fine del container -->
 
-         </div>
+    <!-- *********************** -->
+    <!-- **** AREA TEMPLATE **** -->
+    <!-- *********************** -->
 
-    <!-- ** FINE DELLA SEZIONE DX DELLA PAGINA ** -->
-    </section>
-
-<!-- FINE DEL CONTAINER -->
+    <div  id="msg-by-cpu" class="template" style="display:none">
+      <div  class="cpu-msg">
+        <p id="message-text-cpu">Ue giovanotto!</p>
+        <span id="msg-time" class="time"></span>
+      </div>
     </div>
 
-  </body>
+    <div  id="msg-by-user" class="template" style="display:none">
+      <div  class="user-msg">
+        <p id="message-text"></p>
+        <span id="msg-time" class="time"></span>
+      </div>
+    </div>
 
+    <!-- !! LINK DEL MIO SCRIPT JS!! -->
+    <script type="text/javascript" src="myscript.js"></script>
+  </body>
 </html>
